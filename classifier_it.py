@@ -98,18 +98,6 @@ while (j < len(score_t)):
 print("\nClassifier results:")
 
 
-# Cosine Similarity
-def get_vectors(cos_sim_corp):
-    vectorizer = CountVectorizer()
-    vector = vectorizer.fit_transform(cos_sim_corp).todense()
-    return vector
-
-
-cos_sim_corp = [test_corp] + [corpus.replace("\n", " ")]
-vector_1_sent = get_vectors(cos_sim_corp)[0]
-vector_2_sent = get_vectors(cos_sim_corp)[1]
-
-print("Cosine Similarity of Italian doc: ", cosine_similarity(vector_1_sent, vector_2_sent))
 
 # Naive Bayes
 naive_bayes = nltk.NaiveBayesClassifier.train(list_of_tuples)
