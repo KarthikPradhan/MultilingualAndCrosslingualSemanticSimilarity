@@ -1,4 +1,4 @@
-# MultilingualAndCrosslingualSemanticSimilarity
+# Multilingual and Crosslingual Semantic Word Similarity
 In semantic textual similarity (STS), systems rate the degree of semantic equivalence between two text snippets
 
 # Requirements
